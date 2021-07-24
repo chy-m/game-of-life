@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { Table, TableCell } from '@material-ui/core'
 
+export const IS_ACTIVE_COLOR = '#ffe1e6'
+
 export const StyledSimulator = styled.div`
   display: grid;
   grid-gap: 32px 0;
@@ -30,5 +32,5 @@ export const StyledTable = styled(Table)`
 export const StyledTableCell = styled(TableCell)<{ $isActive: number }>`
   height: 20px;
   width: 20px;
-  background-color: ${({ $isActive }) => ($isActive ? '#ffe1e6' : undefined)};
+  background-color: ${({ $isActive }) => ($isActive ? IS_ACTIVE_COLOR : undefined)};
 `

@@ -54,7 +54,7 @@ export const Simulator: React.FC<SimulatorProps> = () => {
         </TableBody>
       </StyledTable>
       <Typography variant='subtitle1' align='center'>
-        Number of generations <b>{generations}</b>
+        <b> Number of generations {generations}</b>
       </Typography>
     </StyledSimulator>
   )
