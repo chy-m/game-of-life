@@ -30,6 +30,7 @@ export const Simulator: React.FC<SimulatorProps> = () => {
         <Button
           variant='outlined'
           onClick={() => {
+            setIsRunning(false)
             setGenerations(0)
             setGrid(generateInitialState())
           }}
